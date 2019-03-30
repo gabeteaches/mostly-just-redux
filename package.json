@@ -5,6 +5,9 @@
   "repository": "https://github.com/gabeteaches/mostly-just-redux",
   "author": "Gabe Meola <gabe@gabemeola.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "live-server ./src/"
+  },
   "devDependencies": {
     "live-server": "^1.2.1"
   }
