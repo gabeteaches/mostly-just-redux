@@ -29,19 +29,24 @@ let renderNumber = 0;
 function Render(props) {
   const { animals, employees } = props;
 
-  const renderNode = document.createElement('p');
-  renderNode.innerHTML = ++renderNumber;
   const wrapperNode = document.createElement('div');
+
+  const renderNode = document.createElement('p');
+  renderNode.textContent = `Times rendered ${++renderNumber}`;
   const animalsNode = document.createElement('h1');
   animalsNode.textContent = `Animals are ${animals.join(', ')}`;
   const employeeNode = document.createElement('h2');
   employeeNode.textContent = `Employees are ${employees.join(', ')}`;
 
   wrapperNode.append(
-    renderNumber,
+    renderNode,
     animalsNode,
     employeeNode,
   )
+  // Remove previous child
+  if (rootNode.lastElementChild) {
+    rootNode.removeChild(rootNode.lastElementChild)
+  }
   rootNode.appendChild(wrapperNode);
 }
 
