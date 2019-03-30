@@ -1,0 +1,11 @@
+{
+  "name": "mostly-just-redux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gabeteaches/mostly-just-redux",
+  "author": "Gabe Meola <gabe@gabemeola.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
